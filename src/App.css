@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .calculator {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 1330px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    width: 92%;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    margin-top:220px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .button-row button {
+    width: calc(25% - 5px);
+    padding: 5px;
+    font-size: 1.2em;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    
+  }
+  
+  .button-row button:active {
+    background-color: #0056b3;
+  }
+  
+  .history {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  
+  .history pre {
+    margin: 0;
+    white-space: pre-wrap;
+    font-size: 0.8em;
+  }
+  button:hover{
+    transform: scale(1.1);
+  }
+ 
+  
+  .history button {
+
+    margin-top: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .keypad {
+    margin-top: 3px;
+    background-attachment: fixed;
+
+  }
+  
+  .keypad-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .keypad-row button {
+    width: calc(45% - 5px);
+    height:3px;
+    margin:5px;
+    padding: 15px;
+    font-size: 0.8em;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.219);
+    cursor: pointer;
+    font-weight:bold;
+  }
+  
+  .keypad-row button:active {
+    background-color: #e9ecef;
+  }
+
+  .App.dark {
+    background-color: #333;
+    color: #f0f0f0;
+  }
+  .change{
+    background-color:red;
+    border:none;
+    color:white;
+
+  }
+
+@media(max-width:1125px){
+    .calculator{
+        width:300px;
+        
+        border-top: 10px solid black;
+        border-left:2px solid black;
+        border-right:2px solid black;
+        border-bottom:2px solid black;
+        border-radius: 20px;
+
+       
+    }
+   
+ .input-field{
+    margin-top:10px;
+
+}
+.keypad-row button {
+    height:30px;
+    font-size: 1.2em;
+    padding:2px;
+    background-color:rgba(128, 128, 128, 0.13);
+    
+
+}
+.change{
+    position: relative;
+    background-color:rgba(128, 128, 128, 0.164);
+    color:black;
+    width:40px;
+    font-size: 0.5em;
+}
+}
